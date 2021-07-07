@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Shrikhand", "cursive";
+  font-weight: 300;
+}
+
+main {
+  min-height: 400px;
+}
+
+/* HEADER */
+.header {
+  height: 40px;
+  background-color: #508bce;
+  -webkit-box-shadow: 0 0 5px 2px #000;
+          box-shadow: 0 0 5px 2px #000;
+  display: block;
+}
+
+.header__nav {
+  height: 40px;
+  position: relative;
+}
+
+.header__nav i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#nbPanier {
+  background-color: #ba0505;
+  color: #fff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  position: absolute;
+  font-weight: bold;
+  top: 5px;
+  right: 15px;
+  display: none;
+}
+
+.presentation {
+  margin-top: 10px;
+}
+
+.presentation__titre {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.presentation__soustitre {
+  font-size: 1.0rem;
+  text-align: center;
+}
+
+.carte {
+  -webkit-box-shadow: 0 0 10px 2px #ccc;
+          box-shadow: 0 0 10px 2px #ccc;
+  border: 1px solid #ddd;
+}
+
+.carte:hover {
+  -webkit-animation: shadow-drop-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.bouton-voir-produit,
+#boutonajout {
+  background-color: #508bce;
+}
+
+.bouton-voir-produit:hover,
+#boutonajout:hover {
+  background-color: #285990;
+}
+
+.detail-produit__titre {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.panier__titre {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.vignettePanier {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  height: 50px;
+}
+
+.supprimerarticle {
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid #28a745;
+}
+
+input:invalid {
+  border: 1px solid #666666;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
